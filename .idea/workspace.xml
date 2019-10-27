@@ -2,14 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1b10225-3583-41cb-ba48-fd74441fa4a3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/houssem/springboot/tuto/todos/TodoRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Calc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/houssem/springboot/tuto/error/ApiBaseException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/houssem/springboot/tuto/error/ApiExceptionsHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/houssem/springboot/tuto/error/ConflictException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/houssem/springboot/tuto/error/ErrorDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/houssem/springboot/tuto/error/NotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/houssem/springboot/tuto/error/ValidationError.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/CalcTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/houssem/springboot/tut/todos/TodoControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/houssem/springboot/tut/todos/TodoServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/houssem/springboot/tuto/todos/Todo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/houssem/springboot/tuto/todos/Todo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/houssem/springboot/tuto/todos/TodoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/houssem/springboot/tuto/todos/TodoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/houssem/springboot/tuto/todos/TodoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/houssem/springboot/tuto/todos/TodoRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/houssem/springboot/tuto/todos/TodoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/houssem/springboot/tuto/todos/TodoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/houssem/springboot/tuto/todos/TodoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/houssem/springboot/tuto/todos/TodoController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/houssem/springboot/tuto/todos/TodoRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/houssem/springboot/tuto/todos/TodoRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/houssem/springboot/tuto/todos/TodoService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/houssem/springboot/tuto/todos/TodoService.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,8 +30,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -57,7 +67,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.TodoApplication">
     <configuration name="TodoApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.houssem.springboot.tuto.TodoApplication" />
       <module name="springboot.todoapi" />
@@ -71,9 +81,75 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TodoControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot.todoapi" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.houssem.springboot.tut.todos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.houssem.springboot.tut.todos" />
+      <option name="MAIN_CLASS_NAME" value="com.houssem.springboot.tut.todos.TodoControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TodoControllerTest.testGetAllTodos" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot.todoapi" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.houssem.springboot.tut.todos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.houssem.springboot.tut.todos" />
+      <option name="MAIN_CLASS_NAME" value="com.houssem.springboot.tut.todos.TodoControllerTest" />
+      <option name="METHOD_NAME" value="testGetAllTodos" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TodoServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot.todoapi" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.houssem.springboot.tut.todos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.houssem.springboot.tut.todos" />
+      <option name="MAIN_CLASS_NAME" value="com.houssem.springboot.tut.todos.TodoServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TodoServiceTest.whenInvalidId_TodoShouldNotBeFound" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot.todoapi" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.houssem.springboot.tut.todos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.houssem.springboot.tut.todos" />
+      <option name="MAIN_CLASS_NAME" value="com.houssem.springboot.tut.todos.TodoServiceTest" />
+      <option name="METHOD_NAME" value="whenInvalidId_TodoShouldNotBeFound" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.TodoApplication" />
+        <item itemvalue="JUnit.TodoControllerTest" />
+        <item itemvalue="JUnit.TodoControllerTest.testGetAllTodos" />
+        <item itemvalue="JUnit.TodoServiceTest" />
+        <item itemvalue="JUnit.TodoServiceTest.whenInvalidId_TodoShouldNotBeFound" />
       </list>
     </recent_temporary>
   </component>
